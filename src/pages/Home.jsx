@@ -7,7 +7,7 @@ import FeaturedServices from "../sections/Home/FeaturedServices";
 import FindDoctor from "../sections/Home/FindDoctor";
 import HealthPriority from "../sections/Home/HealthPriority";
 import Emergency from "../sections/Home/Emergency";
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 
 
 const Home = () => {
