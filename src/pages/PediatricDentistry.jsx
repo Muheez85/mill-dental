@@ -35,7 +35,7 @@ const PediatricDentistry = () => {
         eyebrow="Pediatric Dentistry"
         title="Gentle Dental Care for Growing Smiles"
         description="We create a friendly and comfortable environment where children can develop positive dental habits and enjoy healthier smiles."
-        image="/images/services/pediatric-dentistry.jpg"
+        image="/src/images/pediatric-dental.jpg"
         reverse
       />
 

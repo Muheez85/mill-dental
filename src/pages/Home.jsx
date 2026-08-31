@@ -22,7 +22,7 @@ const Home = () => {
       <FindDoctor />
       <HealthPriority />
     <Emergency />
-    <Footer /> 
+    {/* <Footer />  */}
     </main>
   );
 };

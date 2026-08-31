@@ -35,7 +35,7 @@ const CosmeticDentistry = () => {
         eyebrow="Cosmetic Dentistry"
         title="A Smile You Can Feel Confident About"
         description="Our cosmetic dentistry treatments are designed to enhance the appearance of your smile while keeping your results natural and personalized."
-        image="/images/services/cosmetic-dentistry.jpg"
+        image="/src/images/cosmetic-dentistry.jpg"
       />
 
       <ServiceFeatures

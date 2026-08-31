@@ -35,7 +35,7 @@ const RestorativeDentistry = () => {
         eyebrow="Restorative Dentistry"
         title="Restore Your Smile and Oral Function"
         description="Our restorative treatments help repair damaged or weakened teeth and restore the health, strength, and function of your smile."
-        image="/images/services/restorative-dentistry.jpg"
+        image="/src/images/restorative-dentistry.jpg"
         reverse
       />
 

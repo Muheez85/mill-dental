@@ -35,7 +35,7 @@ const DentalImplants = () => {
         eyebrow="Dental Implants"
         title="A Strong, Natural-Looking Replacement"
         description="Dental implants provide a modern solution for replacing missing teeth and restoring confidence, comfort, and everyday function."
-        image="/images/services/dental-implants.jpg"
+        image="/src/images/dental-implant.jpg"
       />
 
       <ServiceFeatures

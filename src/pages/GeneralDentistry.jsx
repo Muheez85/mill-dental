@@ -35,7 +35,7 @@ const GeneralDentistry = () => {
         eyebrow="General Dentistry"
         title="Complete Care for a Healthy Smile"
         description="Our general dentistry services focus on keeping your teeth and gums healthy through preventive care, regular examinations, and personalized treatments."
-        image="/images/services/general-dentistry.jpg"
+        image="/src/images/general-dentistry.jpg"
       />
 
       <ServiceFeatures
