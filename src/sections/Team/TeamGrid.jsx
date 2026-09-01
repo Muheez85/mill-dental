@@ -7,28 +7,28 @@ const TeamGrid = () => {
       name: "Dr. Sarah Adeyemi",
       role: "Lead Dentist",
       specialty: "General & Cosmetic Dentistry",
-      image: "/images/team/doctor-1.jpg",
+      image: "src/images/doctor-1.jpg",
     },
     {
       id: 2,
       name: "Dr. Michael Okafor",
       role: "Dental Surgeon",
       specialty: "Restorative & Implant Dentistry",
-      image: "/images/team/doctor-2.jpg",
+      image: "src/images/doctor-2.jpg",
     },
     {
       id: 3,
       name: "Dr. Aisha Bello",
       role: "Cosmetic Dentist",
       specialty: "Cosmetic Dentistry & Smile Design",
-      image: "/images/team/doctor-3.jpg",
+      image: "src/images/doctor-3.jpg",
     },
     {
       id: 4,
       name: "Dr. Daniel Williams",
       role: "Pediatric Dentist",
       specialty: "Children's & Preventive Dentistry",
-      image: "/images/team/doctor-4.jpg",
+      image: "src/images/doctor-3.jpg",
     },
   ];
 

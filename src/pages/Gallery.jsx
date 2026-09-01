@@ -2,78 +2,78 @@
 import { useState } from "react";
 import { ArrowUpRight, Image as ImageIcon } from "lucide-react";
 
+import gallery1 from "../images/dental-gallery-1.jpg";
+import gallery2 from "../images/dental-gallery-2.jpg";
+import gallery3 from "../images/dental-gallery-3.jpg";
+import gallery4 from "../images/dental-gallery-4.jpg";
+import gallery5 from "../images/dental-gallery-5.jpg";
+import gallery6 from "../images/dental-gallery-6.jpg";
+import gallery7 from "../images/dental-gallery-7.jpg";
+import gallery8 from "../images/dental-gallery-8.jpg";
+
 const Gallery = () => {
   const [activeFilter, setActiveFilter] = useState("All");
 
   const categories = ["All", "Clinic", "Treatments", "Smiles"];
 
-  const galleryItems = [
-    {
-      id: 1,
-      category: "Clinic",
-      title: "Our Modern Dental Clinic",
-      image:
-        "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=85",
-      size: "large",
-    },
-    {
-      id: 2,
-      category: "Treatments",
-      title: "Professional Dental Care",
-      image:
-        "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=900&q=85",
-      size: "normal",
-    },
-    {
-      id: 3,
-      category: "Smiles",
-      title: "Confident, Healthy Smiles",
-      image:
-        "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=900&q=85",
-      size: "normal",
-    },
-    {
-      id: 4,
-      category: "Clinic",
-      title: "Comfortable Treatment Rooms",
-      image:
-        "https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=900&q=85",
-      size: "normal",
-    },
-    {
-      id: 5,
-      category: "Treatments",
-      title: "Modern Dental Technology",
-      image:
-        "https://images.unsplash.com/photo-1588776814546-daab30f310ce?auto=format&fit=crop&w=900&q=85",
-      size: "normal",
-    },
-    {
-      id: 6,
-      category: "Smiles",
-      title: "A Smile Worth Sharing",
-      image:
-        "https://images.unsplash.com/photo-1606265752439-1f18756aa2e5?auto=format&fit=crop&w=1200&q=85",
-      size: "large",
-    },
-    {
-      id: 7,
-      category: "Clinic",
-      title: "Designed Around Your Comfort",
-      image:
-        "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=900&q=85",
-      size: "normal",
-    },
-    {
-      id: 8,
-      category: "Treatments",
-      title: "Expert Dental Treatment",
-      image:
-        "https://images.unsplash.com/photo-1581585099406-8a7c2a7d6b5a?auto=format&fit=crop&w=900&q=85",
-      size: "normal",
-    },
-  ];
-
+const galleryItems = [
+  {
+    id: 1,
+    category: "Clinic",
+    title: "Our Modern Dental Clinic",
+    image: gallery1,
+    size: "large",
+  },
+  {
+    id: 2,
+    category: "Treatments",
+    title: "Professional Dental Care",
+    image: gallery2,
+    size: "normal",
+  },
+  {
+    id: 3,
+    category: "Smiles",
+    title: "Confident, Healthy Smiles",
+    image: gallery3,
+    size: "normal",
+  },
+  {
+    id: 4,
+    category: "Clinic",
+    title: "Comfortable Treatment Rooms",
+    image: gallery4,
+    size: "normal",
+  },
+  {
+    id: 5,
+    category: "Treatments",
+    title: "Modern Dental Technology",
+    image: gallery5,
+    size: "normal",
+  },
+  {
+    id: 6,
+    category: "Smiles",
+    title: "A Smile Worth Sharing",
+    image: gallery6,
+    size: "large",
+  },
+  {
+    id: 7,
+    category: "Clinic",
+    title: "Designed Around Your Comfort",
+    image: gallery7,
+    size: "normal",
+  },
+  {
+    id: 8,
+    category: "Treatments",
+    title: "Expert Dental Treatment",
+    image: gallery8,
+    size: "normal",
+  },
+];
   const filteredItems =
     activeFilter === "All"
       ? galleryItems
@@ -128,21 +128,21 @@ const Gallery = () => {
           </div>
 
           {/* IMAGE GRID */}
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {filteredItems.map((item) => (
-              <div
-                key={item.id}
-                className={`group relative overflow-hidden rounded-3xl bg-[#EAF5F2] ${
-                  item.size === "large"
-                    ? "sm:row-span-2 sm:min-h-520px"
-                    : "min-h-250px"
-                }`}
-              >
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
+         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+  {filteredItems.map((item) => (
+    <div
+      key={item.id}
+      className={`group relative overflow-hidden rounded-3xl bg-[#EAF5F2] ${
+        item.size === "large"
+          ? "sm:row-span-2 min-h-[500px]"
+          : "min-h-[350px]"
+      }`}
+    >
+      <img
+        src={item.image}
+        alt={item.title}
+        className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+      />
 
                 {/* OVERLAY */}
                 <div className="absolute inset-0 bg-linear-to-t from-[#173B3B]/85 via-[#173B3B]/10 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
