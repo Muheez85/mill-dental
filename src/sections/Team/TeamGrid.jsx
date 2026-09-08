@@ -1,4 +1,7 @@
 import DoctorCard from "../../components/DoctorCard";
+import doctor1 from "../../images/doctor-1.jpg";
+import doctor2 from "../../images/doctor-2.jpg";
+import doctor3 from "../../images/doctor-3.jpg";
 
 const TeamGrid = () => {
   const doctors = [
@@ -7,28 +10,28 @@ const TeamGrid = () => {
       name: "Dr. Sarah Adeyemi",
       role: "Lead Dentist",
       specialty: "General & Cosmetic Dentistry",
-      image: "src/images/doctor-1.jpg",
+      image: doctor1,
     },
     {
       id: 2,
       name: "Dr. Michael Okafor",
       role: "Dental Surgeon",
       specialty: "Restorative & Implant Dentistry",
-      image: "src/images/doctor-2.jpg",
+      image: doctor2,
     },
     {
       id: 3,
       name: "Dr. Aisha Bello",
       role: "Cosmetic Dentist",
       specialty: "Cosmetic Dentistry & Smile Design",
-      image: "src/images/doctor-3.jpg",
+      image: doctor3,
     },
     {
       id: 4,
       name: "Dr. Daniel Williams",
       role: "Pediatric Dentist",
       specialty: "Children's & Preventive Dentistry",
-      image: "src/images/doctor-3.jpg",
+      image: doctor3,
     },
   ];
 

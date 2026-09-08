@@ -2,6 +2,7 @@ import ServiceIntro from "../sections/Services/ServiceIntro";
 import ServiceFeatures from "../sections/Services/ServiceFeatures";
 import RelatedServices from "../sections/Services/RelatedServices";
 import ServiceCTA from "../sections/Services/ServiceCTA";
+import implantImg from "../images/dental-implant.jpg";
 
 const DentalImplants = () => {
   const features = [
@@ -35,7 +36,7 @@ const DentalImplants = () => {
         eyebrow="Dental Implants"
         title="A Strong, Natural-Looking Replacement"
         description="Dental implants provide a modern solution for replacing missing teeth and restoring confidence, comfort, and everyday function."
-        image="/src/images/dental-implant.jpg"
+        image={implantImg}
       />
 
       <ServiceFeatures
