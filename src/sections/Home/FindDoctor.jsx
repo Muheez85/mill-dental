@@ -7,7 +7,7 @@ import {
 
 import doctor1 from "../../images/doctor-1.jpg"
 import doctor2 from "../../images/doctor-2.jpg"
-import doctor3 from "../../images/doctor-3.jpg "
+import doctor3 from "../../images/doctor-3.jpg"
 
 const FindDoctor = () => {
   const doctors = [
