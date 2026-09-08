@@ -4,7 +4,7 @@ import {
   Users,
   ShieldCheck,
 } from "lucide-react";
-import aboutImage from  "../images/about-intro.jpg"
+import aboutImage from  "../../images/about-intro.jpg"
 
 const AboutIntro = () => {
   const highlights = [

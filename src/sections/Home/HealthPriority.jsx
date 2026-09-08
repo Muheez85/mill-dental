@@ -4,6 +4,8 @@ import {
   Clock3,
   ArrowRight,
 } from "lucide-react";
+import piorityImg from "../../images/health-piority.jpg"
+
 
 const HealthPriority = () => {
   const features = [
@@ -34,7 +36,7 @@ const HealthPriority = () => {
           <div className="relative">
             <div className="overflow-hidden rounded-2xl">
               <img
-                src="src/images/health-piority.jpg"
+                src={piorityImg}
                 alt="Dentist caring for a patient"
                 className="h-360px w-full object-cover sm:h-430px"
               />

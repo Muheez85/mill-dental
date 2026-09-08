@@ -2,6 +2,7 @@ import {
   ArrowRight,
   CheckCircle2,
 } from "lucide-react";
+import committedImg from "../../images/committed-dental.jpg"
 
 const Committed = () => {
   return (
@@ -14,7 +15,7 @@ const Committed = () => {
           <div className="relative">
             <div className="overflow-hidden rounded-2xl">
               <img
-                src="src/images/committed-dental.jpg"
+                src={committedImg}
                 alt="Mill Dental professional providing dental care"
                 className="h-420px w-full object-cover sm:h-500px lg:h-560px"
               />

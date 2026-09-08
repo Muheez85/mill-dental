@@ -5,6 +5,10 @@ import {
   HeartHandshake,
 } from "lucide-react";
 
+
+import whychooseImg from "../../images/Why-choose-us.jpg"
+
+
 const WhyChooseUs = () => {
   const reasons = [
     {
@@ -60,7 +64,7 @@ const WhyChooseUs = () => {
 
             <div className="mt-8 overflow-hidden rounded-2xl">
               <img
-                src="src/images/why-choose-us.jpg"
+                src={whychooseImg}
                 alt="Dental professional caring for a patient"
                 className="h-280px w-full object-cover sm:h-340px"
               />

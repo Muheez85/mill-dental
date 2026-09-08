@@ -6,6 +6,8 @@ import {
   ShieldCheck,
 } from "lucide-react";
 
+import emergencyImg from "../../images/emergency-dental.jpg"
+
 const Emergency = () => {
   return (
     <section className="bg-[#f5f9f8] py-16 sm:py-20 lg:py-24">
@@ -149,7 +151,7 @@ const Emergency = () => {
             <div className="relative min-h-350px lg:min-h-full">
 
               <img
-                src="src/images/emergency-dental.jpg"
+                src={emergencyImg}
                 alt="Dental professional providing emergency care"
                 className="absolute inset-0 h-full w-full object-cover"
               />

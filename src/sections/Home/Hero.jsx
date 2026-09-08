@@ -4,6 +4,11 @@ import {
   Clock3,
   Phone,
 } from "lucide-react";
+
+import homeImg from "../../images/hero.jpg"
+
+
+
 const Hero = () => {
   return (
     <section className="bg-[#f6f9fc] pt-32 pb-16 lg:pt-40 lg:pb-24">
@@ -111,7 +116,7 @@ const Hero = () => {
           <div className="relative">
             <div className="overflow-hidden rounded-24px">
               <img
-                src="/src/images/dentist-hero.jpg"
+                src={homeImg}
                 alt="Dentist providing professional dental care"
                 className="h-450px w-full object-cover sm:h-540px lg:h-620px"
               />

@@ -5,26 +5,30 @@ import {
   Stethoscope,
 } from "lucide-react";
 
+import doctor1 from "../../images/doctor-1.jpg"
+import doctor2 from "../../images/doctor-2.jpg"
+import doctor3 from "../../images/doctor-3.jpg "
+
 const FindDoctor = () => {
   const doctors = [
     {
       name: "Dr. Sarah Williams",
       specialty: "General Dentist",
-      image: "src/images/doctor-1.jpg",
+      image: doctor1,
       rating: "4.9",
       reviews: "124",
     },
     {
       name: "Dr. Michael Anderson",
       specialty: "Cosmetic Dentist",
-      image: "src/images/doctor-2.jpg",
+      image: doctor2,
       rating: "4.8",
       reviews: "98",
     },
     {
       name: "Dr. Emily Carter",
       specialty: "Restorative Dentist",
-      image: "src/images/doctor-3.jpg",
+      image: doctor3,
       rating: "4.9",
       reviews: "116",
     },
