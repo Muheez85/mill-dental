@@ -4,6 +4,7 @@ import {
   Users,
   ShieldCheck,
 } from "lucide-react";
+import aboutImage from  "../images/about-intro.jpg"
 
 const AboutIntro = () => {
   const highlights = [
@@ -39,7 +40,7 @@ const AboutIntro = () => {
           <div className="relative">
             <div className="overflow-hidden rounded-2xl">
               <img
-                src="src/images/about-intro.jpg"
+                src={aboutImage}
                 alt="Mill Dental team providing patient care"
                 className="h-350px w-full object-cover sm:h-430px"
               />

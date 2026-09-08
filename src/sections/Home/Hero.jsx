@@ -4,7 +4,6 @@ import {
   Clock3,
   Phone,
 } from "lucide-react";
-
 const Hero = () => {
   return (
     <section className="bg-[#f6f9fc] pt-32 pb-16 lg:pt-40 lg:pb-24">

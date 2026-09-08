@@ -5,6 +5,8 @@ import Values from "../sections/About/Values";
 import Team from "../sections/About/Team";
 import AboutCTA from "../sections/About/AboutCTA";
 // import Footer from "../components/Footer";
+// import heroImage from  "../images/about-intro.jpg"
+
 
 const About = () => {
   return (
