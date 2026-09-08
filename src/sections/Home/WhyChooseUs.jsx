@@ -6,7 +6,7 @@ import {
 } from "lucide-react";
 
 
-import whychooseImg from "../../images/Why-choose-us.jpg"
+import whychooseImg from "../../images/why-choose-us.jpg"
 
 
 const WhyChooseUs = () => {
