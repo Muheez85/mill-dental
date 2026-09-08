@@ -16,11 +16,11 @@ const Footer = () => {
   ];
 
   const services = [
-    { name: "General Dentistry", href: "/services" },
-    { name: "Cosmetic Dentistry", href: "/services" },
-    { name: "Restorative Dentistry", href: "/services" },
-    { name: "Pediatric Dentistry", href: "/services" },
-    { name: "Dental Implants", href: "/services" },
+    { name: "General Dentistry", href: "/services/general-dentistry" },
+    { name: "Cosmetic Dentistry", href: "/services/cosmetic-dentistry" },
+    { name: "Restorative Dentistry", href: "/services/restorative-dentistry" },
+    { name: "Pediatric Dentistry", href: "/services/pediatric-dentistry" },
+    { name: "Dental Implants", href: "/services/dental-implants" },
   ];
 
   return (

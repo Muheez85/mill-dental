@@ -134,8 +134,8 @@ const galleryItems = [
       key={item.id}
       className={`group relative overflow-hidden rounded-3xl bg-[#EAF5F2] ${
         item.size === "large"
-          ? "sm:row-span-2 min-h-[500px]"
-          : "min-h-[350px]"
+          ? "sm:row-span-2 min-h-125"
+          : "min-h-87.5"
       }`}
     >
       <img
@@ -160,9 +160,9 @@ const galleryItems = [
                       </h2>
                     </div>
 
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-[#173B3B]">
+                    {/* <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-[#173B3B]">
                       <ArrowUpRight size={18} strokeWidth={1.8} />
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
