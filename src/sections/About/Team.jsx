@@ -1,25 +1,28 @@
 import { ArrowRight } from "lucide-react";
+import doctor1 from "../../images/doctor-1.jpg";
+import doctor2 from "../../images/doctor-2.jpg";
+import doctor3 from "../../images/doctor-3.jpg";
 
 const doctors = [
   {
     name: "Dr. Sarah Williams",
     role: "Lead Dentist",
-    image: "src/images/doctor-1.jpg",
+    image: doctor1,
   },
   {
     name: "Dr. Michael Anderson",
     role: "Cosmetic Dentist",
-    image: "src/images/doctor-2.jpg",
+    image: doctor2,
   },
   {
     name: "Dr. Emily Carter",
     role: "Restorative Dentist",
-    image: "src/images/doctor-3.jpg",
+    image: doctor3,
   },
   {
     name: "Dr. James Wilson",
     role: "Orthodontist",
-    image:  "src/images/doctor-1.jpg",
+    image: doctor1,
   },
 ];
 

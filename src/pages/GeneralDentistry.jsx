@@ -2,6 +2,7 @@ import ServiceIntro from "../sections/Services/ServiceIntro";
 import ServiceFeatures from "../sections/Services/ServiceFeatures";
 import RelatedServices from "../sections/Services/RelatedServices";
 import ServiceCTA from "../sections/Services/ServiceCTA";
+import generalImg from "../images/general-dentistry.jpg";
 
 const GeneralDentistry = () => {
   const features = [
@@ -35,7 +36,7 @@ const GeneralDentistry = () => {
         eyebrow="General Dentistry"
         title="Complete Care for a Healthy Smile"
         description="Our general dentistry services focus on keeping your teeth and gums healthy through preventive care, regular examinations, and personalized treatments."
-        image="/src/images/general-dentistry.jpg"
+        image={generalImg}
       />
 
       <ServiceFeatures
