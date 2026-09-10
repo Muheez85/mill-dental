@@ -2,8 +2,8 @@ import ServiceIntro from "../sections/Services/ServiceIntro";
 import ServiceFeatures from "../sections/Services/ServiceFeatures";
 import RelatedServices from "../sections/Services/RelatedServices";
 import ServiceCTA from "../sections/Services/ServiceCTA";
+import restorativeImg from "../images/restorative-dentistry.jpg";
 
-import  restorativeImg from "../images/restorative-dentistry.jpg"
 
 
 const RestorativeDentistry = () => {

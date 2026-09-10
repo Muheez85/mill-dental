@@ -1,9 +1,9 @@
 import DoctorCard from "../../components/DoctorCard";
+import doctor1 from "../../images/doctor-1.jpg";
+import doctor2 from "../../images/doctor-2.jpg";
+import doctor3 from "../../images/doctor-3.jpg";
 
 
-import doctor1 from "../../images/doctor-1.jpg"
-import doctor2 from "../../images/doctor-2.jpg"
-import doctor3 from "../../images/doctor-3.jpg"
 
 const TeamGrid = () => {
   const doctors = [

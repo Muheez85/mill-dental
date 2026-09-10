@@ -2,8 +2,8 @@ import ServiceIntro from "../sections/Services/ServiceIntro";
 import ServiceFeatures from "../sections/Services/ServiceFeatures";
 import RelatedServices from "../sections/Services/RelatedServices";
 import ServiceCTA from "../sections/Services/ServiceCTA";
+import pediatricImg from "../images/pediatric-dental.jpg";
 
-import pediatricImg from "../images/pediatric-dental.jpg"
 
 const PediatricDentistry = () => {
   const features = [

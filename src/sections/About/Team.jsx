@@ -1,12 +1,9 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
-
-import doctor1 from   "../../images/doctor-1.jpg"
-import doctor2 from   "../../images/doctor-2.jpg"
-import doctor3 from   "../../images/doctor-3.jpg"
-
-
+import doctor1 from "../../images/doctor-1.jpg";
+import doctor2 from "../../images/doctor-2.jpg";
+import doctor3 from "../../images/doctor-3.jpg";
 
 const doctors = [
   {
@@ -27,7 +24,7 @@ const doctors = [
   {
     name: "Dr. James Wilson",
     role: "Orthodontist",
-    image:  doctor1,
+    image: doctor1,
   },
 ];
 

@@ -2,6 +2,7 @@ import ServiceIntro from "../sections/Services/ServiceIntro";
 import ServiceFeatures from "../sections/Services/ServiceFeatures";
 import RelatedServices from "../sections/Services/RelatedServices";
 import ServiceCTA from "../sections/Services/ServiceCTA";
+import cosmeticImg from "../images/cosmetic-dentistry.jpg";
 
 
 
@@ -38,7 +39,7 @@ const CosmeticDentistry = () => {
         eyebrow="Cosmetic Dentistry"
         title="A Smile You Can Feel Confident About"
         description="Our cosmetic dentistry treatments are designed to enhance the appearance of your smile while keeping your results natural and personalized."
-        image={cosmetic}
+        image={cosmeticImg}
       />
 
       <ServiceFeatures
