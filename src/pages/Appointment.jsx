@@ -375,12 +375,12 @@ const Appointment = () => {
 
               <p className="text-center text-xs leading-5 text-[#8A9896]">
                 By submitting this form, you agree to our{" "}
-                <a
-                  href="/privacy"
+                <Link
+                  to="/privacy"
                   className="font-semibold text-[#0F766E] hover:underline"
                 >
                   Privacy Policy
-                </a>
+                </Link>
                 .
               </p>
             </form>
@@ -404,12 +404,12 @@ const Appointment = () => {
               options.
             </p>
 
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="mt-5 inline-flex rounded-full bg-[#173B3B] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#0F766E]"
             >
               Contact Our Team
-            </a>
+            </Link>
           </div>
         </div>
       </section>

@@ -5,6 +5,8 @@ import {
   Clock3,
   ArrowUp,
 } from "lucide-react";
+import { Link } from "react-router-dom";
+
 
 const Footer = () => {
   const quickLinks = [
@@ -39,8 +41,8 @@ const Footer = () => {
           <div>
 
             {/* Logo */}
-            <a
-              href="/"
+            <Link
+              to="/"
               className="flex w-fit items-center gap-2.5"
             >
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#0F766E]">
@@ -58,7 +60,7 @@ const Footer = () => {
                   DENTAL
                 </span>
               </div>
-            </a>
+            </Link>
 
             {/* Description */}
             <p className="mt-5 max-w-290px text-sm leading-6 text-white/60">
@@ -115,12 +117,12 @@ const Footer = () => {
             <ul className="mt-5 space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.name}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className="text-sm text-white/60 transition-colors hover:text-[#57C5B8]"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -137,12 +139,12 @@ const Footer = () => {
             <ul className="mt-5 space-y-3">
               {services.map((service) => (
                 <li key={service.name}>
-                  <a
-                    href={service.href}
+                  <Link
+                    to={service.href}
                     className="text-sm text-white/60 transition-colors hover:text-[#57C5B8]"
                   >
                     {service.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -236,19 +238,19 @@ const Footer = () => {
           {/* Bottom Links */}
           <div className="flex flex-wrap items-center gap-5">
 
-            <a
-              href="/privacy"
+            <Link
+              to="/privacy"
               className="text-xs text-white/45 transition-colors hover:text-white"
             >
               Privacy Policy
-            </a>
+            </Link>
 
-            <a
-              href="/terms"
+            <Link
+              to="/terms"
               className="text-xs text-white/45 transition-colors hover:text-white"
             >
               Terms & Conditions
-            </a>
+            </Link>
 
             {/* Back To Top */}
             <a

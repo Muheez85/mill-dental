@@ -7,6 +7,7 @@ import {
 
 import homeImg from "../../images/hero.jpg"
 
+import { Link } from "react-router-dom";
 
 
 const Hero = () => {
@@ -37,8 +38,8 @@ const Hero = () => {
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
-              <a
-                href="/appointment"
+              <Link
+                to="/appointment"
                 className="inline-flex items-center rounded-full bg-[#0F766E] px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[#115E59]"
               >
                 Book an Appointment
@@ -48,14 +49,14 @@ const Hero = () => {
                   strokeWidth={2}
                   className="ml-2"
                 />
-              </a>
+              </Link>
 
-              <a
-                href="/services"
+              <Link
+                to="/services"
                 className="inline-flex items-center rounded-full border border-[#D6E1DF] bg-white px-7 py-3.5 text-sm font-semibold text-[#173B3B] transition-colors hover:border-[#0F766E] hover:text-[#0F766E]"
               >
                 Explore Services
-              </a>
+              </Link>
             </div>
 
             {/* Quick Information */}

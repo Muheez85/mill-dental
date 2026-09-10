@@ -2,6 +2,7 @@ import {
   CalendarDays,
   ArrowRight,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const ServiceCTA = () => {
   return (
@@ -29,8 +30,8 @@ const ServiceCTA = () => {
 
             </div>
 
-            <a
-              href="/appointment"
+            <Link
+              to="/appointment"
               className="inline-flex w-fit shrink-0 items-center rounded-full bg-white px-6 py-3.5 text-sm font-semibold text-[#0F766E] transition-colors hover:bg-[#EAF5F3]"
             >
               <CalendarDays
@@ -46,7 +47,7 @@ const ServiceCTA = () => {
                 strokeWidth={1.8}
                 className="ml-2"
               />
-            </a>
+            </Link>
 
           </div>
 

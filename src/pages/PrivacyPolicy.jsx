@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const PrivacyPolicy = () => {
   return (
@@ -197,12 +198,12 @@ const PrivacyPolicy = () => {
                 the contact details provided on our website.
               </p>
 
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="mt-6 inline-flex rounded-full bg-[#0F766E] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#115E59]"
               >
                 Contact Mill Dental
-              </a>
+              </Link>
             </div>
           </article>
         </div>

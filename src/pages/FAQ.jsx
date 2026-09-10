@@ -1,6 +1,8 @@
 
 import { useState } from "react";
 import { Plus, Minus, CalendarCheck } from "lucide-react";
+import { Link } from "react-router-dom";
+
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(0);
@@ -98,12 +100,12 @@ const FAQ = () => {
                 appointment to discuss your needs.
               </p>
 
-              <a
-                href="/appointment"
+              <Link
+                to="/appointment"
                 className="mt-7 inline-flex items-center justify-center rounded-full bg-[#0F766E] px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[#115E59]"
               >
                 Book an Appointment
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -185,12 +187,12 @@ const FAQ = () => {
               treatment, we're here to help you keep your smile healthy.
             </p>
 
-            <a
-              href="/appointment"
+            <Link
+              to="/appointment"
               className="mt-7 inline-flex rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-[#173B3B] transition-colors hover:bg-[#EAF5F2]"
             >
               Schedule Your Visit
-            </a>
+            </Link>
           </div>
         </div>
       </section>

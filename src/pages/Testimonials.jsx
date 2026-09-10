@@ -1,5 +1,6 @@
 
 import { Quote, Star } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Testimonials = () => {
   const testimonials = [
@@ -174,12 +175,12 @@ const Testimonials = () => {
                 professional dental care.
               </p>
 
-              <a
-                href="/appointment"
+              <Link
+                to="/appointment"
                 className="mt-7 inline-flex rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-[#173B3B] transition-colors hover:bg-[#EAF5F2]"
               >
                 Book an Appointment
-              </a>
+              </Link>
             </div>
           </div>
         </div>

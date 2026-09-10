@@ -4,6 +4,7 @@ import {
   BadgeCheck,
   ArrowRight,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Accreditation = () => {
   const accreditations = [
@@ -54,8 +55,8 @@ const Accreditation = () => {
                 care, safety, and patient experience in everything we do.
               </p>
 
-              <a
-                href="/about"
+              <Link
+                to="/about"
                 className="mt-6 inline-flex items-center text-sm font-semibold text-[#0F766E] transition-colors hover:text-[#115E59]"
               >
                 Learn About Our Standards
@@ -65,7 +66,7 @@ const Accreditation = () => {
                   strokeWidth={2}
                   className="ml-2"
                 />
-              </a>
+              </Link>
             </div>
 
             {/* Accreditation Items */}

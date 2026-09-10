@@ -1,4 +1,5 @@
 import { ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const AboutHero = () => {
   return (
@@ -25,12 +26,12 @@ const AboutHero = () => {
 
           {/* Breadcrumb */}
           <div className="mt-6 flex items-center justify-center gap-2 text-xs font-medium">
-            <a
-              href="/"
+            <Link
+              to="/"
               className="text-[#0F766E] transition-colors hover:text-[#115E59]"
             >
               Home
-            </a>
+            </Link>
 
             <ChevronRight
               size={13}

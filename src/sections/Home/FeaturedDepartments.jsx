@@ -6,6 +6,7 @@ import {
   ScanLine,
   ArrowRight,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const FeaturedDepartments = () => {
   const departments = [
@@ -105,8 +106,8 @@ const FeaturedDepartments = () => {
                 </p>
 
                 {/* Link */}
-                <a
-                  href="/departments"
+                <Link
+                  to="/departments"
                   className="mt-6 inline-flex items-center text-sm font-semibold text-[#0F766E]"
                 >
                   Explore Department
@@ -115,7 +116,7 @@ const FeaturedDepartments = () => {
                     strokeWidth={2}
                     className="ml-2 transition-transform duration-200 group-hover:translate-x-1"
                   />
-                </a>
+                </Link>
               </article>
             );
           })}

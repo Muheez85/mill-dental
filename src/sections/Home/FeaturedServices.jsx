@@ -5,6 +5,7 @@ import {
   Baby,
   ArrowRight,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const FeaturedServices = () => {
   const services = [
@@ -56,8 +57,8 @@ const FeaturedServices = () => {
             </p>
           </div>
 
-          <a
-            href="/services"
+          <Link
+            to="/services"
             className="inline-flex items-center text-sm font-semibold text-[#0F766E] transition-colors hover:text-[#115E59]"
           >
             View All Services
@@ -66,7 +67,7 @@ const FeaturedServices = () => {
               strokeWidth={2}
               className="ml-2"
             />
-          </a>
+          </Link>
         </div>
 
         {/* Services */}
@@ -94,8 +95,8 @@ const FeaturedServices = () => {
                   {service.description}
                 </p>
 
-                <a
-                  href="/services"
+                <Link
+                  to="/services"
                   className="mt-6 inline-flex items-center text-sm font-semibold text-[#0F766E]"
                 >
                   Learn More
@@ -104,7 +105,7 @@ const FeaturedServices = () => {
                     strokeWidth={2}
                     className="ml-2 transition-transform duration-200 group-hover:translate-x-1"
                   />
-                </a>
+                </Link>
               </article>
             );
           })}

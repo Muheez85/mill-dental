@@ -5,6 +5,8 @@ import {
   ArrowRight,
   ShieldCheck,
 } from "lucide-react";
+import { Link } from "react-router-dom";
+
 
 import emergencyImg from "../../images/emergency-dental.jpg"
 
@@ -131,8 +133,8 @@ const Emergency = () => {
                   Call Emergency Line
                 </a>
 
-                <a
-                  href="/appointment"
+                <Link
+                  to="/appointment"
                   className="inline-flex items-center justify-center rounded-full border border-white/40 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
                 >
                   Book Appointment
@@ -142,7 +144,7 @@ const Emergency = () => {
                     strokeWidth={2}
                     className="ml-2"
                   />
-                </a>
+                </Link>
 
               </div>
             </div>

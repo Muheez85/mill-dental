@@ -3,6 +3,7 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import committedImg from "../../images/committed-dental.jpg"
+import { Link } from "react-router-dom";
 
 const Committed = () => {
   return (
@@ -105,8 +106,8 @@ const Committed = () => {
             </div>
 
             {/* Button */}
-            <a
-              href="/about"
+            <Link
+              to="/about"
               className="mt-8 inline-flex items-center rounded-full bg-[#0F766E] px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[#115E59]"
             >
               Learn More About Us
@@ -116,7 +117,7 @@ const Committed = () => {
                 strokeWidth={2}
                 className="ml-2"
               />
-            </a>
+            </Link>
 
           </div>
 

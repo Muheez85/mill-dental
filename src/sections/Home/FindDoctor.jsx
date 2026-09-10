@@ -8,6 +8,7 @@ import {
 import doctor1 from "../../images/doctor-1.jpg"
 import doctor2 from "../../images/doctor-2.jpg"
 import doctor3 from "../../images/doctor-3.jpg"
+import { Link } from "react-router-dom";
 
 const FindDoctor = () => {
   const doctors = [
@@ -56,8 +57,8 @@ const FindDoctor = () => {
             </p>
           </div>
 
-          <a
-            href="/doctors"
+          <Link
+            a="/doctors"
             className="inline-flex items-center text-sm font-semibold text-[#0F766E]"
           >
             View All Doctors
@@ -66,7 +67,7 @@ const FindDoctor = () => {
               strokeWidth={2}
               className="ml-2"
             />
-          </a>
+          </Link>
         </div>
 
         {/* Doctors */}
@@ -120,8 +121,8 @@ const FindDoctor = () => {
                 </div>
 
                 <div className="mt-5 flex items-center justify-between border-t border-[#E8EEEC] pt-5">
-                  <a
-                    href="/appointment"
+                  <Link
+                    to="/appointment"
                     className="inline-flex items-center text-sm font-semibold text-[#0F766E]"
                   >
                     Book Appointment
@@ -130,10 +131,10 @@ const FindDoctor = () => {
                       strokeWidth={1.8}
                       className="ml-2"
                     />
-                  </a>
+                  </Link>
 
-                  <a
-                    href="/doctors"
+                  <Link
+                    to="/doctors"
                     className="flex h-9 w-9 items-center justify-center rounded-full border border-[#DDE7E5] text-[#526565] transition-colors hover:border-[#0F766E] hover:text-[#0F766E]"
                     aria-label={`View ${doctor.name}`}
                   >
@@ -141,7 +142,7 @@ const FindDoctor = () => {
                       size={16}
                       strokeWidth={1.8}
                     />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </article>

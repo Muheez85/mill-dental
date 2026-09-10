@@ -4,6 +4,9 @@ import {
   ArrowRight,
 } from "lucide-react";
 
+
+import { Link } from "react-router-dom";
+
 const AboutCTA = () => {
   return (
     <section className="bg-white py-16 sm:py-20 lg:py-24">
@@ -41,8 +44,8 @@ const AboutCTA = () => {
             {/* Buttons */}
             <div className="relative flex shrink-0 flex-col gap-3 sm:flex-row lg:flex-col xl:flex-row">
 
-              <a
-                href="/appointment"
+              <Link
+                to="/appointment"
                 className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#0F766E] transition-colors hover:bg-[#EAF5F3]"
               >
                 <CalendarDays
@@ -52,7 +55,7 @@ const AboutCTA = () => {
                 />
 
                 Book an Appointment
-              </a>
+              </Link>
 
               <a
                 href="tel:+2348000000000"

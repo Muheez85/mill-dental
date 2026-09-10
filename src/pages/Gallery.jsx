@@ -1,6 +1,7 @@
 
 import { useState } from "react";
-import { ArrowUpRight, Image as ImageIcon } from "lucide-react";
+import {  Image as ImageIcon } from "lucide-react";
+import { Link } from "react-router-dom";
 
 import gallery1 from "../images/dental-gallery-1.jpg";
 import gallery2 from "../images/dental-gallery-2.jpg";
@@ -207,12 +208,12 @@ const galleryItems = [
               environment designed around you.
             </p>
 
-            <a
-              href="/appointment"
+            <Link
+              to="/appointment"
               className="mt-7 inline-flex rounded-full bg-[#0F766E] px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[#115E59]"
             >
               Book an Appointment
-            </a>
+            </Link>
           </div>
         </div>
       </section>

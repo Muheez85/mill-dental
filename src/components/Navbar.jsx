@@ -4,6 +4,7 @@ import {
   X,
   ChevronDown,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,8 +28,8 @@ const Navbar = () => {
         {/* =====================================================
             LOGO
         ====================================================== */}
-        <a
-          href="/"
+        <Link
+          to="/"
           className="flex shrink-0 items-center gap-2.5"
         >
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#0F766E]">
@@ -46,7 +47,7 @@ const Navbar = () => {
               DENTAL
             </span>
           </div>
-        </a>
+        </Link>
 
         {/* =====================================================
             DESKTOP NAVIGATION
@@ -54,20 +55,20 @@ const Navbar = () => {
         <div className="hidden items-center lg:flex">
 
           {/* HOME */}
-          <a
-            href="/"
+          <Link
+            to="/"
             className="px-4 py-3 text-[15px] font-semibold text-[#0F766E]"
           >
             Home
-          </a>
+          </Link>
 
           {/* ABOUT */}
-          <a
-            href="/about"
+          <Link
+            to="/about"
             className="px-4 py-3 text-[15px] font-semibold text-[#526565] transition-colors hover:text-[#0F766E]"
           >
             About
-          </a>
+          </Link>
 
           {/* =================================================
               SERVICES DROPDOWN
@@ -89,58 +90,58 @@ const Navbar = () => {
 
             <div className="invisible absolute left-1/2 top-full w-56 -translate-x-1/2 translate-y-2 rounded-2xl bg-white p-2 opacity-0 shadow-[0_12px_35px_rgba(0,0,0,0.10)] transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
 
-              <a
-                href="/services"
+              <Link
+                to="/services"
                 className="block rounded-xl px-4 py-3 text-sm font-semibold text-[#173B3B] transition-colors hover:bg-[#F0F7F5] hover:text-[#0F766E]"
               >
                 All Services
-              </a>
+              </Link>
 
-              <a
-                href="/services/general-dentistry"
+              <Link
+                to="/services/general-dentistry"
                 className="block rounded-xl px-4 py-3 text-sm text-[#526565] transition-colors hover:bg-[#F0F7F5] hover:text-[#0F766E]"
               >
                 General Dentistry
-              </a>
+              </Link>
 
-              <a
-                href="/services/cosmetic-dentistry"
+              <Link
+                to="/services/cosmetic-dentistry"
                 className="block rounded-xl px-4 py-3 text-sm text-[#526565] transition-colors hover:bg-[#F0F7F5] hover:text-[#0F766E]"
               >
                 Cosmetic Dentistry
-              </a>
+              </Link>
 
-              <a
-                href="/services/restorative-dentistry"
+              <Link
+                to="/services/restorative-dentistry"
                 className="block rounded-xl px-4 py-3 text-sm text-[#526565] transition-colors hover:bg-[#F0F7F5] hover:text-[#0F766E]"
               >
                 Restorative Dentistry
-              </a>
+              </Link>
 
-              <a
-                href="/services/dental-implants"
+              <Link
+                to="/services/dental-implants"
                 className="block rounded-xl px-4 py-3 text-sm text-[#526565] transition-colors hover:bg-[#F0F7F5] hover:text-[#0F766E]"
               >
                 Dental Implants
-              </a>
+              </Link>
 
-              <a
-                href="/services/pediatric-dentistry"
+              <Link
+                to="/services/pediatric-dentistry"
                 className="block rounded-xl px-4 py-3 text-sm text-[#526565] transition-colors hover:bg-[#F0F7F5] hover:text-[#0F766E]"
               >
                 Pediatric Dentistry
-              </a>
+              </Link>
 
             </div>
           </div>
 
           {/* OUR TEAM */}
-          <a
-            href="/team"
+          <Link
+            to="/team"
             className="px-4 py-3 text-[15px] font-semibold text-[#526565] transition-colors hover:text-[#0F766E]"
           >
             Our Team
-          </a>
+          </Link>
 
           {/* =================================================
               MORE DROPDOWN
@@ -162,63 +163,63 @@ const Navbar = () => {
 
             <div className="invisible absolute left-1/2 top-full w-52 -translate-x-1/2 translate-y-2 rounded-2xl bg-white p-2 opacity-0 shadow-[0_12px_35px_rgba(0,0,0,0.10)] transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
 
-              <a
-                href="/faq"
+              <Link
+                to="/faq"
                 className="block rounded-xl px-4 py-3 text-sm text-[#526565] transition-colors hover:bg-[#F0F7F5] hover:text-[#0F766E]"
               >
                 FAQ
-              </a>
+              </Link>
 
-              <a
-                href="/gallery"
+              <Link
+                to="/gallery"
                 className="block rounded-xl px-4 py-3 text-sm text-[#526565] transition-colors hover:bg-[#F0F7F5] hover:text-[#0F766E]"
               >
                 Gallery
-              </a>
+              </Link>
 
-              <a
-                href="/testimonials"
+              <Link
+                to="/testimonials"
                 className="block rounded-xl px-4 py-3 text-sm text-[#526565] transition-colors hover:bg-[#F0F7F5] hover:text-[#0F766E]"
               >
                 Testimonials
-              </a>
+              </Link>
 
-              <a
-                href="/privacy"
+              <Link
+                to="/privacy"
                 className="block rounded-xl px-4 py-3 text-sm text-[#526565] transition-colors hover:bg-[#F0F7F5] hover:text-[#0F766E]"
               >
                 Privacy Policy
-              </a>
+              </Link>
 
-              <a
-                href="/terms"
+              <Link
+                to="/terms"
                 className="block rounded-xl px-4 py-3 text-sm text-[#526565] transition-colors hover:bg-[#F0F7F5] hover:text-[#0F766E]"
               >
                 Terms & Conditions
-              </a>
+              </Link>
 
             </div>
           </div>
 
           {/* CONTACT */}
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="px-4 py-3 text-[15px] font-semibold text-[#526565] transition-colors hover:text-[#0F766E]"
           >
             Contact
-          </a>
+          </Link>
 
         </div>
 
         {/* =====================================================
             DESKTOP APPOINTMENT
         ====================================================== */}
-        <a
-          href="/appointment"
+        <Link
+          to="/appointment"
           className="hidden shrink-0 rounded-full bg-[#0F766E] px-7 py-3 text-[15px] font-semibold text-white transition-colors hover:bg-[#115E59] lg:block"
         >
           Appointment
-        </a>
+        </Link>
 
         {/* =====================================================
             MOBILE MENU BUTTON
@@ -247,22 +248,22 @@ const Navbar = () => {
           <div className="flex flex-col">
 
             {/* HOME */}
-            <a
-              href="/"
+            <Link
+              to="/"
               onClick={closeMobile}
               className="border-b border-[#E8EEEC] py-4 text-sm font-semibold text-[#0F766E]"
             >
               Home
-            </a>
+            </Link>
 
             {/* ABOUT */}
-            <a
-              href="/about"
+            <Link
+              to="/about"
               onClick={closeMobile}
               className="border-b border-[#E8EEEC] py-4 text-sm font-semibold text-[#526565]"
             >
               About
-            </a>
+            </Link>
 
             {/* =================================================
                 MOBILE SERVICES
@@ -290,66 +291,66 @@ const Navbar = () => {
               {openMobileMenu === "services" && (
                 <div className="mb-3 ml-3 border-l border-[#DCE7E4] pl-4">
 
-                  <a
-                    href="/services"
+                  <Link
+                    to="/services"
                     onClick={closeMobile}
                     className="block py-2.5 text-sm font-semibold text-[#0F766E]"
                   >
                     All Services
-                  </a>
+                  </Link>
 
-                  <a
-                    href="/services/general-dentistry"
+                  <Link
+                    to="/services/general-dentistry"
                     onClick={closeMobile}
                     className="block py-2.5 text-sm text-[#687777]"
                   >
                     General Dentistry
-                  </a>
+                  </Link>
 
-                  <a
-                    href="/services/cosmetic-dentistry"
+                  <Link
+                    to="/services/cosmetic-dentistry"
                     onClick={closeMobile}
                     className="block py-2.5 text-sm text-[#687777]"
                   >
                     Cosmetic Dentistry
-                  </a>
+                  </Link>
 
-                  <a
-                    href="/services/restorative-dentistry"
+                  <Link
+                    to="/services/restorative-dentistry"
                     onClick={closeMobile}
                     className="block py-2.5 text-sm text-[#687777]"
                   >
                     Restorative Dentistry
-                  </a>
+                  </Link>
 
-                  <a
-                    href="/services/dental-implants"
+                  <Link
+                    to="/services/dental-implants"
                     onClick={closeMobile}
                     className="block py-2.5 text-sm text-[#687777]"
                   >
                     Dental Implants
-                  </a>
+                  </Link>
 
-                  <a
-                    href="/services/pediatric-dentistry"
+                  <Link
+                    to="/services/pediatric-dentistry"
                     onClick={closeMobile}
                     className="block py-2.5 text-sm text-[#687777]"
                   >
                     Pediatric Dentistry
-                  </a>
+                  </Link>
 
                 </div>
               )}
             </div>
 
             {/* OUR TEAM */}
-            <a
-              href="/team"
+            <Link
+              to="/team"
               onClick={closeMobile}
               className="border-b border-[#E8EEEC] py-4 text-sm font-semibold text-[#526565]"
             >
               Our Team
-            </a>
+            </Link>
 
             {/* =================================================
                 MOBILE MORE
@@ -377,67 +378,67 @@ const Navbar = () => {
               {openMobileMenu === "more" && (
                 <div className="mb-3 ml-3 border-l border-[#DCE7E4] pl-4">
 
-                  <a
-                    href="/faq"
+                  <Link
+                    to="/faq"
                     onClick={closeMobile}
                     className="block py-2.5 text-sm text-[#687777]"
                   >
                     FAQ
-                  </a>
+                  </Link>
 
-                  <a
-                    href="/gallery"
+                  <Link
+                    to="/gallery"
                     onClick={closeMobile}
                     className="block py-2.5 text-sm text-[#687777]"
                   >
                     Gallery
-                  </a>
+                  </Link>
 
-                  <a
-                    href="/testimonials"
+                  <Link
+                    to="/testimonials"
                     onClick={closeMobile}
                     className="block py-2.5 text-sm text-[#687777]"
                   >
                     Testimonials
-                  </a>
+                  </Link>
 
-                  <a
-                    href="/privacy"
+                  <Link
+                    to="/privacy"
                     onClick={closeMobile}
                     className="block py-2.5 text-sm text-[#687777]"
                   >
                     Privacy Policy
-                  </a>
+                  </Link>
 
-                  <a
-                    href="/terms"
+                  <Link
+                    to="/terms"
                     onClick={closeMobile}
                     className="block py-2.5 text-sm text-[#687777]"
                   >
                     Terms & Conditions
-                  </a>
+                  </Link>
 
                 </div>
               )}
             </div>
 
             {/* CONTACT */}
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               onClick={closeMobile}
               className="border-b border-[#E8EEEC] py-4 text-sm font-semibold text-[#526565]"
             >
               Contact
-            </a>
+            </Link>
 
             {/* APPOINTMENT */}
-            <a
-              href="/appointment"
+            <Link
+              to="/appointment"
               onClick={closeMobile}
               className="mt-5 rounded-full bg-[#0F766E] px-6 py-3.5 text-center text-sm font-semibold text-white transition-colors hover:bg-[#115E59]"
             >
               Appointment
-            </a>
+            </Link>
 
           </div>
         </div>

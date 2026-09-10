@@ -6,6 +6,7 @@ import {
 } from "lucide-react";
 import aboutImage from  "../../images/about-intro.jpg"
 
+
 const AboutIntro = () => {
   const highlights = [
     {

@@ -6,6 +6,7 @@ import {
   Baby,
   ArrowRight,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -91,8 +92,8 @@ const ServiceGrid = () => {
                   {service.description}
                 </p>
 
-                <a
-                  href={service.link}
+                <Link
+                  to={service.link}
                   className="mt-6 inline-flex items-center text-sm font-semibold text-[#0F766E]"
                 >
                   Learn More
@@ -102,7 +103,7 @@ const ServiceGrid = () => {
                     strokeWidth={1.8}
                     className="ml-2 transition-transform duration-200 group-hover:translate-x-1"
                   />
-                </a>
+                </Link>
 
               </article>
             );

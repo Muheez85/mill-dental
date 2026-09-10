@@ -1,4 +1,5 @@
 import { ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const ServicesHero = () => {
   return (
@@ -21,12 +22,12 @@ const ServicesHero = () => {
           </p>
 
           <div className="mt-6 flex items-center justify-center gap-2 text-xs font-medium">
-            <a
-              href="/"
+            <link
+              to="/"
               className="text-[#0F766E] hover:text-[#115E59]"
             >
               Home
-            </a>
+            </link>
 
             <ChevronRight
               size={13}

@@ -5,6 +5,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import piorityImg from "../../images/health-piority.jpg"
+import { Link } from "react-router-dom";
 
 
 const HealthPriority = () => {
@@ -117,7 +118,7 @@ const HealthPriority = () => {
             </div>
 
             {/* CTA */}
-            <a
+            <Link
               href="/about"
               className="mt-8 inline-flex items-center rounded-full bg-[#0F766E] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#115E59]"
             >
@@ -128,7 +129,7 @@ const HealthPriority = () => {
                 strokeWidth={2}
                 className="ml-2"
               />
-            </a>
+            </Link>
           </div>
 
         </div>

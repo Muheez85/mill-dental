@@ -7,6 +7,7 @@ import {
 //   Instagram,
 //   Facebook,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
@@ -340,12 +341,12 @@ const Contact = () => {
               healthier, more confident teeth.
             </p>
 
-            <a
-              href="/appointment"
+            <Link
+              to="/appointment"
               className="mt-7 inline-flex rounded-full bg-[#0F766E] px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[#115E59]"
             >
               Book an Appointment
-            </a>
+            </Link>
           </div>
         </div>
       </section>
